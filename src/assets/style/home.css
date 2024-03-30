@@ -1,0 +1,24 @@
+.bs-height {
+    height: calc(100vh - 152px) !important;
+}
+
+@media (max-width : 990px) {
+    .bs-height {
+        height: calc(100vh - 92px) !important;
+    }
+}
+
+.jus-center {
+    justify-content: space-between;
+}
+
+@media (max-width : 440px) {
+    .jus-center {
+        justify-content: center;
+    }
+}
+
+.my-color {
+    /* mix-blend-mode: var(--bs-green); */
+    mix-blend-mode: multiply;
+}

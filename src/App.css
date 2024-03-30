@@ -55,6 +55,9 @@ a:hover {
   color: black;
 }
 
+.tx-black{
+  color: var(--bs-black);
+}
 
 .tx-org {
   color: var(--bs-orange) !important;
@@ -173,3 +176,4 @@ a:hover {
 .fs-10 {
   font-size: 0.5rem !important;
 }
+

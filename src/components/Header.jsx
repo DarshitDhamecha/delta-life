@@ -4,11 +4,11 @@ const Header = () => {
     return (
         <>
             <div className='d-none d-lg-block d-xl-block d-2xl-block'>
-                <div className='py-2 w-100'>
-                    <img src="/images/logo.jpg" className='mx-auto' alt="" />
+                <div className='h-[100px] w-100 flex items-center justify-center'>
+                    <img src="/images/logo.jpg" className='h-full w-fit py-2' alt="" />
                 </div>
                 <div className='w-100 bg-[#f9f9f9] py-[2px]'></div>
-                <div className='flex py-3 items-center justify-around px-5 fs-6 font-medium'>
+                <div className='flex h-[48px] items-center justify-around px-20 fs-6 font-medium'>
                     <a href='#'>News</a>
                     <a href='#'>About</a>
                     <a href='#'>Contact</a>
@@ -24,7 +24,7 @@ const Header = () => {
                     <a href='#'>Delta 8</a>
                     <a href='#'>Delta 9</a>
                     <a href='#'>Delta 10</a>
-                    <button className='bs-green px-3 fs-6 py-2 tx-white hover:!bg-[#84b741]'>
+                    <button className='bs-green px-3 fs-6 py-1.5 tx-white hover:!bg-[#84b741]'>
                         All Products
                     </button>
                 </div>
@@ -36,7 +36,6 @@ const Header = () => {
                     <i className="fa-solid fa-bars fs-1 tx-green"></i>
                 </button>
             </div>
-
             {/* <---------------------- offcanvas for responsive design ----------------------> */}
             <div className="offcanvas offcanvas-end w-75" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
 
