@@ -1,38 +1,175 @@
-.App {
-  text-align: center;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  font-family: Montserrat, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Basic CSS Start */
+:root {
+  --default-font: "Montserrat";
+  --col-bg: #f8eded;
+  --hue: 223;
+  --trans-dur: 0.4s;
+  --bs-orange: #ff8000;
+  --bs-transprent: transprent;
+  --bs-blue: #2c74b3;
+  --bs-grey: #9f9f9f;
+  --bs-white: #ffffff;
+  --bs-black: #000000;
+  --bs-lorg: #ffe6cc;
+  --bs-red: #db3f3f;
+  --bs-marun: #832729;
+  --bs-green: #8cc63f;
+  --bs-skin: #f6e8e6;
+  --bs-baby-pink: #f2e9e9;
+  --bs-dark-pink: #efe3e3;
+  --bs-black: rgb(21, 21, 21);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#root {
+  width: 100%;
+  overflow-x: hidden;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+li {
+  list-style: none;
 }
 
-.App-link {
-  color: #61dafb;
+.tx-mont {
+  font-family: sans-serif, Montserrat;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a,
+a:active,
+a:focus,
+a:hover {
+  text-decoration: none;
+  outline: 0;
+  color: black;
+}
+
+
+.tx-org {
+  color: var(--bs-orange) !important;
+}
+
+.tx-red {
+  color: var(--bs-red) !important;
+}
+
+.tx-marun {
+  color: var(--bs-marun) !important;
+}
+
+.tx-green {
+  color: var(--bs-green) !important;
+}
+
+.tx-yellow {
+  color: var(--bs-yellow) !important;
+}
+
+.tx-white {
+  color: var(--bs-white) !important;
+}
+
+.tx-pink {
+  color: var(--bs-baby-pink) !important;
+}
+
+.tx-dpink {
+  color: var(--bs-dark-pink) !important;
+}
+
+.tx-blue {
+  color: var(--bs-blue) !important;
+}
+
+.tx-grey {
+  color: var(--bs-grey) !important;
+}
+
+/* ================================ */
+
+.bs-org {
+  background: var(--bs-orange) !important;
+}
+
+.bs-transprent {
+  background: var(--bs-transprent) !important;
+}
+
+.bs-red {
+  background: var(--bs-red) !important;
+}
+
+.bs-pink {
+  background: var(--bs-baby-pink) !important;
+}
+
+.bs-dpink {
+  background: var(--bs-dark-pink) !important;
+}
+
+.bs-marun {
+  background: var(--bs-marun) !important;
+}
+
+.bs-green {
+  background: var(--bs-green) !important;
+}
+
+.bs-red {
+  background: var(--bs-red) !important;
+}
+
+.bs-green {
+  background: var(--bs-green) !important;
+}
+
+.bs-yellow {
+  background: var(--bs-yellow) !important;
+}
+
+.bs-white {
+  background: var(--bs-white) !important;
+}
+
+.bs-black {
+  background-color: var(--bs-black) !important;
+}
+
+.bs-skin {
+  background-color: var(--bs-skin) !important;
+}
+
+.bs-blue {
+  background-color: var(--bs-blue) !important;
+}
+
+.fs-6 {
+  font-size: 1rem !important;
+}
+
+.fs-7 {
+  font-size: 0.8rem !important;
+}
+
+.fs-8 {
+  font-size: 0.7rem !important;
+}
+
+.fs-9 {
+  font-size: 0.6rem !important;
+}
+
+.fs-10 {
+  font-size: 0.5rem !important;
 }
