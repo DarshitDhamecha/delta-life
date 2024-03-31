@@ -22,7 +22,7 @@ body {
   --bs-blue: #2c74b3;
   --bs-grey: #9f9f9f;
   --bs-white: #ffffff;
-  --bs-black: #000000;
+  --bs-black: #171717;
   --bs-lorg: #ffe6cc;
   --bs-red: #db3f3f;
   --bs-marun: #832729;
@@ -55,7 +55,7 @@ a:hover {
   color: black;
 }
 
-.tx-black{
+.tx-black {
   color: var(--bs-black);
 }
 
@@ -100,6 +100,11 @@ a:hover {
 }
 
 /* ================================ */
+
+
+.bs-tra {
+  background-color: transparent;
+}
 
 .bs-org {
   background: var(--bs-orange) !important;
@@ -157,6 +162,10 @@ a:hover {
   background-color: var(--bs-blue) !important;
 }
 
+.text-bg-success{
+  background-color: var(--bs-green) !important;
+}
+
 .fs-6 {
   font-size: 1rem !important;
 }
@@ -177,3 +186,49 @@ a:hover {
   font-size: 0.5rem !important;
 }
 
+.fs-11 {
+  font-size: 1.1rem !important;
+}
+
+.effcts {
+  position: relative;
+  transition: all 0.5s ease;
+
+}
+
+/* for header hover effct */
+.effcts::after {
+  content: "";
+  border: 2px solid var(--bs-green);
+  width: 100%;
+  position: absolute;
+  bottom: -4px;
+  right: 0;
+  scale: 0;
+  transition: all 0.5s ease;
+}
+
+.effcts:hover:after {
+  scale: 1;
+}
+.effcts:hover {
+  color: var(--bs-green);
+}
+
+/* for scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: var(--bs-green);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555555ab;
+}

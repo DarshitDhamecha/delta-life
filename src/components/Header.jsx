@@ -9,21 +9,21 @@ const Header = () => {
                 </div>
                 <div className='w-100 bg-[#f9f9f9] py-[2px]'></div>
                 <div className='flex h-[48px] items-center justify-around px-20 fs-6 font-medium'>
-                    <a href='#'>News</a>
-                    <a href='#'>About</a>
-                    <a href='#'>Contact</a>
-                    <a href='#'>Account</a>
-                    <a href='#'>Wholesale</a>
-                    <div className='flex items-center gap-1'>
-                        <a href='#'>Vape</a>
+                    <a href='#' className='effcts'>News</a>
+                    <a href='#' className='effcts'>About</a>
+                    <a href='#' className='effcts'>Contact</a>
+                    <a href='#' className='effcts'>Account</a>
+                    <a href='#' className='effcts'>Wholesale</a>
+                    <div className='flex items-center gap-1 effcts'>
+                        <a href='#' className='effcts'>Vape</a>
                         <i className="fa-solid fa-chevron-down"></i>
                     </div>
-                    <a href='#'>THC-O</a>
-                    <a href='#'>HHC-O</a>
-                    <a href='#'>HHC</a>
-                    <a href='#'>Delta 8</a>
-                    <a href='#'>Delta 9</a>
-                    <a href='#'>Delta 10</a>
+                    <a href='#' className='effcts'>THC-O</a>
+                    <a href='#' className='effcts'>HHC-O</a>
+                    <a href='#' className='effcts'>HHC</a>
+                    <a href='#' className='effcts'>Delta 8</a>
+                    <a href='#' className='effcts'>Delta 9</a>
+                    <a href='#' className='effcts'>Delta 10</a>
                     <button className='bs-green px-3 fs-6 py-1.5 tx-white hover:!bg-[#84b741]'>
                         All Products
                     </button>

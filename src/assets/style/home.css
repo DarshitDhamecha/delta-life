@@ -12,9 +12,117 @@
     justify-content: space-between;
 }
 
-@media (max-width : 440px) {
+.bs-img::after {
+    content: "";
+    background-image: url("/public/images/hero-img-removebg-preview.png");
+    position: absolute;
+    bottom: -234px;
+    right: 0px;
+    height: 110vh;
+    width: 43vw;
+    background-size: cover;
+    background-position: center;
+    z-index: -9;
+}
+
+.my-ring {
+    height: 400px;
+    width: 400px;
+    border: 30px solid #8cc63f;
+    border-radius: 100%;
+    z-index: 2;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banar-img {
+    background-image: url("/public/images/lonely-person-walking-pathway-alabama-hills-california-with-mount-whitney\ 1.png");
+    width: 100%;
+    height: 80vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.baner-filter {
+    background: rgba(207, 253, 199, 0.16);
+    -webkit-backdrop-filter: blur(1px);
+    backdrop-filter: blur(1px);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.baner-filter-sec {
+    background: rgba(255, 255, 255, 0.226);
+    -webkit-backdrop-filter: blur(1px);
+    backdrop-filter: blur(1px);
+    
+}
+
+
+@media (max-width : 768px) {
+    .my-ring {
+        height: 200px;
+        width: 200px;
+        border: 15px solid #8cc63f;
+    }
+
+}
+
+@media (max-width: 1240px) {
+    .bs-img::after {
+        width: 56vw;
+    }
+}
+
+
+@media (max-width: 800px) {
+    .bs-img::after {
+        width: 77vw;
+        bottom: -180px;
+    }
+}
+
+@media (max-width : 768px) {
+    .bs-img::after {
+        content: "";
+        position: absolute;
+        bottom: -234px !important;
+        right: 0px;
+        height: 110vh;
+        width: 85vw !important;
+        background-size: cover;
+        background-position: center;
+        background-position-x: center;
+        background-position-y: center;
+        z-index: -9;
+    }
+}
+
+@media (max-width : 500px) {
+    .bs-img::after {
+        content: "";
+        position: absolute;
+        bottom: -234px !important;
+        right: 0px;
+        height: 100vh;
+        width: 123vw !important;
+        background-size: cover;
+        background-position: center;
+        background-position-x: center;
+        background-position-y: center;
+        z-index: -9;
+    }
+}
+
+@media (max-width : 590px) {
     .jus-center {
         justify-content: center;
+        gap: 20px;
     }
 }
 
